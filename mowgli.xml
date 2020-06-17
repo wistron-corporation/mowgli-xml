@@ -24055,7 +24055,7 @@
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default>null</default>
+		<default>BMC_SW_VER</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
