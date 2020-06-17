@@ -19612,7 +19612,7 @@
 	</attribute>
 	<attribute>
 		<id>PEER_TARGET</id>
-		<default>NULL</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
@@ -19691,7 +19691,7 @@
 	</attribute>
 	<attribute>
 		<id>PEER_TARGET</id>
-		<default>NULL</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
