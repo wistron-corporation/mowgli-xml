@@ -9670,7 +9670,7 @@
 	</attribute>
 	<attribute>
 		<id>OPAL_MODEL</id>
-		<default>ibm,romulus</default>
+		<default>ibm,mowgli</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_DIMM_ERROR_TEMP_DEG_C</id>
@@ -10034,7 +10034,7 @@
 	</attribute>
 	<attribute>
 		<id>SYSTEM_NAME</id>
-		<default>ROMULUS</default>
+		<default>MOWGLI</default>
 	</attribute>
 	<attribute>
 		<id>SYSTEM_RESCLK_STEP_DELAY</id>
@@ -10046,7 +10046,7 @@
 	</attribute>
 	<attribute>
 		<id>SYSTEM_TYPE</id>
-		<default>ibm,romulus</default>
+		<default>ibm,mowgli</default>
 	</attribute>
 	<attribute>
 		<id>SYSTEM_VDM_DISABLE</id>
@@ -19612,7 +19612,7 @@
 	</attribute>
 	<attribute>
 		<id>PEER_TARGET</id>
-		<default></default>
+		<default>NULL</default>
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
@@ -19691,7 +19691,7 @@
 	</attribute>
 	<attribute>
 		<id>PEER_TARGET</id>
-		<default></default>
+		<default>NULL</default>
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
@@ -24052,6 +24052,10 @@
 	<attribute>
 		<id>RU_TYPE</id>
 		<default>null</default>
+	</attribute>
+	<attribute>
+		<id>SW_VER</id>
+		<default>BMC_SW_VER</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
