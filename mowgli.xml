@@ -10712,11 +10712,11 @@
 		</bus_attribute>
 	</bus>
 	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb3_x8/phb3_x8_pci => USB-1/pciep</bus_id>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb4_x8/phb4_x8_pci => USB-1/pciep</bus_id>
 		<bus_type>PCIE</bus_type>
 		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb3_x8/</source_path>
-		<source_target>phb3_x8_pci</source_target>
+		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb4_x8/</source_path>
+		<source_target>phb4_x8_pci</source_target>
 		<dest_path>USB-1/</dest_path>
 		<dest_target>pciep</dest_target>
 		<bus_attribute>
@@ -10741,11 +10741,11 @@
 		</bus_attribute>
 	</bus>
 	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x4_x4_config/phb3_x8/phb3_x8_pci => pcieslot-2/pciecard-0/pciep</bus_id>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x4_x4_config/phb5_x4/phb5_x4_pci => pcieslot-2/pciecard-0/pciep</bus_id>
 		<bus_type>PCIE</bus_type>
 		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x4_x4_config/phb3_x8/</source_path>
-		<source_target>phb3_x8_pci</source_target>
+		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x4_x4_config/phb5_x4/</source_path>
+		<source_target>phb5_x4_pci</source_target>
 		<dest_path>pcieslot-2/pciecard-0/</dest_path>
 		<dest_target>pciep</dest_target>
 		<bus_attribute>
