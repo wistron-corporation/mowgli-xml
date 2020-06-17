@@ -24047,15 +24047,15 @@
 	</attribute>
 	<attribute>
 		<id>ROLE</id>
-		<default>null</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>RU_TYPE</id>
-		<default>null</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default>BMC_SW_VER</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
