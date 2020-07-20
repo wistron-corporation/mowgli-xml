@@ -12712,11 +12712,11 @@
 	</attribute>
 	<attribute>
 		<id>VCS_AVSBUS_BUSNUM</id>
-		<default>1</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>VCS_AVSBUS_RAIL</id>
-		<default>0</default>
+		<default>1</default>
 	</attribute>
 	<attribute>
 		<id>VCS_I2C_BUSNUM</id>
@@ -25188,15 +25188,15 @@
 	</attribute>
 	<attribute>
 		<id>ROLE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>RU_TYPE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
