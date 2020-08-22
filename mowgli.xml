@@ -11498,27 +11498,6 @@
 		</bus_attribute>
 	</bus>
 	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/fsim-0 => proc_socket-0/module-0/p9_proc_s/fsi-slave-0</bus_id>
-		<bus_type>FSIM</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
-		<source_target>fsim-0</source_target>
-		<dest_path>proc_socket-0/module-0/p9_proc_s/</dest_path>
-		<dest_target>fsi-slave-0</dest_target>
-		<bus_attribute>
-			<id>BUS_WIDTH</id>
-		<default>2</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-	</bus>
-	<bus>
 		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm0123 => dimmconn-0/dimm-0/spd/i2c-slave</bus_id>
 		<bus_type>I2C</bus_type>
 		<cable>no</cable>
