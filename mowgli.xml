@@ -8737,10 +8737,6 @@
 	<value></value>
 	</property>
 	<property>
-	<id>EI_BUS_TX_MSBSWAP</id>
-	<value></value>
-	</property>
-	<property>
 	<id>IPMI_INSTANCE</id>
 	<value></value>
 	</property>
@@ -9980,7 +9976,7 @@
 	<id>/sys-0/ps_redundancy_state_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x0B</value>
+	<value>0x09</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -11988,27 +11984,6 @@
 		<bus_attribute>
 			<id>PCIE_SWAP_CLKS</id>
 		<default>0</default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/xbus1 => proc_socket-0/module-0/p9_proc_s/xbus2</bus_id>
-		<bus_type>XBUS</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
-		<source_target>xbus1</source_target>
-		<dest_path>proc_socket-0/module-0/p9_proc_s/</dest_path>
-		<dest_target>xbus2</dest_target>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>CONFIG_APPLY</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
 		</bus_attribute>
 	</bus>
 </targetInstance>
@@ -25289,15 +25264,15 @@
 	</attribute>
 	<attribute>
 		<id>ROLE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>RU_TYPE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
