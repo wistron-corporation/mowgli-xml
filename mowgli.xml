@@ -9976,7 +9976,7 @@
 	<id>/sys-0/ps_redundancy_state_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x09</value>
+	<value>0x0B</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -10865,7 +10865,7 @@
 	</attribute>
 	<attribute>
 		<id>OPAL_MODEL</id>
-		<default>wistron,mowgli</default>
+		<default>ibm,mowgli</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_DIMM_ERROR_TEMP_DEG_C</id>
@@ -11241,7 +11241,7 @@
 	</attribute>
 	<attribute>
 		<id>SYSTEM_TYPE</id>
-		<default>wistron,mowgli</default>
+		<default>ibm,mowgli</default>
 	</attribute>
 	<attribute>
 		<id>SYSTEM_VDM_DISABLE</id>
