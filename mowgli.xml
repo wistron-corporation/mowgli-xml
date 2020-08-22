@@ -8362,6 +8362,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsi-cm-0</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+	<property>
+	<id>FSI_LINK</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsi-slave-0</id>
 	<property>
 	<id>DIRECTION</id>
@@ -8390,6 +8401,10 @@
 	<value></value>
 	</property>
 	<property>
+	<id>FSI_LINK</id>
+	<value></value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
 	<value></value>
 	</property>
@@ -8401,7 +8416,22 @@
 	<value></value>
 	</property>
 	<property>
+	<id>FSI_LINK</id>
+	<value></value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsim-2</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+	<property>
+	<id>FSI_LINK</id>
 	<value></value>
 	</property>
 </globalSetting>
@@ -9946,7 +9976,7 @@
 	<id>/sys-0/ps_redundancy_state_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x09</value>
+	<value>0x0B</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -11277,6 +11307,27 @@
 		<id>powr-vrm-xml-filenames</id>
 		<default></default>
 	</attribute>
+	<bus>
+		<bus_id>node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsim-0 => node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsi-slave-0</bus_id>
+		<bus_type>FSIM</bus_type>
+		<cable>no</cable>
+		<source_path>node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>fsim-0</source_target>
+		<dest_path>node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/</dest_path>
+		<dest_target>fsi-slave-0</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+	</bus>
 </targetInstance>
 <targetInstance>
 	<id>node-0</id>
@@ -25213,15 +25264,15 @@
 	</attribute>
 	<attribute>
 		<id>ROLE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>RU_TYPE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
