@@ -5786,6 +5786,10 @@
 	<id>IPMI_INSTANCE</id>
 	<value></value>
 	</property>
+	<property>
+	<id>SLOT_INDEX</id>
+	<value></value>
+	</property>
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/motherboard-0/dimmconn-0</id>
@@ -6681,6 +6685,13 @@
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x1e</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/dimmconn-3/dimm-0/spd</id>
+	<property>
+	<id>I2C_ADDRESS</id>
+	<value></value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -8358,6 +8369,17 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsi-cm-0</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+	<property>
+	<id>FSI_LINK</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsi-slave-0</id>
 	<property>
 	<id>DIRECTION</id>
@@ -8386,6 +8408,10 @@
 	<value></value>
 	</property>
 	<property>
+	<id>FSI_LINK</id>
+	<value></value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
 	<value></value>
 	</property>
@@ -8397,7 +8423,22 @@
 	<value></value>
 	</property>
 	<property>
+	<id>FSI_LINK</id>
+	<value></value>
+	</property>
+	<property>
 	<id>IPMI_INSTANCE</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/fsim-2</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+	<property>
+	<id>FSI_LINK</id>
 	<value></value>
 	</property>
 </globalSetting>
@@ -8425,6 +8466,13 @@
 </globalSetting>
 <globalSetting>
 	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/i2c-master-lightpath</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/i2c-master-proc-promc0</id>
 	<property>
 	<id>DIRECTION</id>
 	<value></value>
@@ -8544,6 +8592,20 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/mcbist1/mcs3/mca6/ddr_ch6:cs0</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/mcbist1/mcs3/mca7/ddr_ch7:cs0</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/occ</id>
 	<property>
 	<id>FRU_ID</id>
@@ -8635,6 +8697,13 @@
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb3_x8/phb3_x8_pci</id>
+	<property>
+	<id>DIRECTION</id>
 	<value></value>
 	</property>
 </globalSetting>
@@ -10810,7 +10879,7 @@
 	</attribute>
 	<attribute>
 		<id>OPAL_MODEL</id>
-		<default>wistron,mowgli</default>
+		<default>ibm,mowgli</default>
 	</attribute>
 	<attribute>
 		<id>OPEN_POWER_DIMM_ERROR_TEMP_DEG_C</id>
@@ -11186,7 +11255,7 @@
 	</attribute>
 	<attribute>
 		<id>SYSTEM_TYPE</id>
-		<default>wistron,mowgli</default>
+		<default>ibm,mowgli</default>
 	</attribute>
 	<attribute>
 		<id>SYSTEM_VDM_DISABLE</id>
@@ -11391,6 +11460,19 @@
 		<default>NA</default>
 	</attribute>
 	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/mcbist0/mcs0/mca0/ddr_ch0:cs0 => dimmconn-0/dimm-0/ddr4</bus_id>
+		<bus_type>DDR4</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/mcbist0/mcs0/mca0/</source_path>
+		<source_target>ddr_ch0:cs0</source_target>
+		<dest_path>dimmconn-0/dimm-0/</dest_path>
+		<dest_target>ddr4</dest_target>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+	</bus>
+	<bus>
 		<bus_id>proc_socket-0/module-0/p9_proc_s/mcbist0/mcs0/mca1/ddr_ch1:cs0 => dimmconn-1/dimm-0/ddr4</bus_id>
 		<bus_type>DDR4</bus_type>
 		<cable>no</cable>
@@ -11423,19 +11505,6 @@
 		<source_path>proc_socket-0/module-0/p9_proc_s/mcbist1/mcs2/mca5/</source_path>
 		<source_target>ddr_ch5:cs0</source_target>
 		<dest_path>dimmconn-3/dimm-0/</dest_path>
-		<dest_target>ddr4</dest_target>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/mcbist0/mcs0/mca0/ddr_ch0:cs0 => dimmconn-0/dimm-0/ddr4</bus_id>
-		<bus_type>DDR4</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/mcbist0/mcs0/mca0/</source_path>
-		<source_target>ddr_ch0:cs0</source_target>
-		<dest_path>dimmconn-0/dimm-0/</dest_path>
 		<dest_target>ddr4</dest_target>
 		<bus_attribute>
 			<id>CLASS</id>
@@ -11575,138 +11644,6 @@
 		</bus_attribute>
 	</bus>
 	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm0123 => dimmconn-2/dimm-0/spd/i2c-slave</bus_id>
-		<bus_type>I2C</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
-		<source_target>i2c-master-dimm0123</source_target>
-		<dest_path>dimmconn-2/dimm-0/spd/</dest_path>
-		<dest_target>i2c-slave</dest_target>
-		<bus_attribute>
-			<id>BUS_WIDTH</id>
-		<default>2</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_PURPOSE</id>
-		<default>DIMM_SPD</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_SPEED</id>
-		<default>400</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_TYPE</id>
-		<default>SEEPROM</default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm0123 => dimmconn-2/dimm-0/dimm-thermal-sensor/dimm-thermal-sensor.i2c</bus_id>
-		<bus_type>I2C</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
-		<source_target>i2c-master-dimm0123</source_target>
-		<dest_path>dimmconn-2/dimm-0/dimm-thermal-sensor/</dest_path>
-		<dest_target>dimm-thermal-sensor.i2c</dest_target>
-		<bus_attribute>
-			<id>BUS_WIDTH</id>
-		<default>2</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_PURPOSE</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_SPEED</id>
-		<default>400</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_TYPE</id>
-		<default></default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm0123 => dimmconn-3/dimm-0/spd/i2c-slave</bus_id>
-		<bus_type>I2C</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
-		<source_target>i2c-master-dimm0123</source_target>
-		<dest_path>dimmconn-3/dimm-0/spd/</dest_path>
-		<dest_target>i2c-slave</dest_target>
-		<bus_attribute>
-			<id>BUS_WIDTH</id>
-		<default>2</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_PURPOSE</id>
-		<default>DIMM_SPD</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_SPEED</id>
-		<default>400</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_TYPE</id>
-		<default>SEEPROM</default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm0123 => dimmconn-3/dimm-0/dimm-thermal-sensor/dimm-thermal-sensor.i2c</bus_id>
-		<bus_type>I2C</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
-		<source_target>i2c-master-dimm0123</source_target>
-		<dest_path>dimmconn-3/dimm-0/dimm-thermal-sensor/</dest_path>
-		<dest_target>dimm-thermal-sensor.i2c</dest_target>
-		<bus_attribute>
-			<id>BUS_WIDTH</id>
-		<default>2</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_PURPOSE</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_SPEED</id>
-		<default>400</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>I2C_TYPE</id>
-		<default></default>
-		</bus_attribute>
-	</bus>
-	<bus>
 		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-lightpath => planar_vpd-0/i2c-slave</bus_id>
 		<bus_type>I2C</bus_type>
 		<cable>no</cable>
@@ -11740,6 +11677,138 @@
 		</bus_attribute>
 	</bus>
 	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm4567 => dimmconn-2/dimm-0/spd/i2c-slave</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-dimm4567</source_target>
+		<dest_path>dimmconn-2/dimm-0/spd/</dest_path>
+		<dest_target>i2c-slave</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default>DIMM_SPD</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>SEEPROM</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm4567 => dimmconn-2/dimm-0/dimm-thermal-sensor/dimm-thermal-sensor.i2c</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-dimm4567</source_target>
+		<dest_path>dimmconn-2/dimm-0/dimm-thermal-sensor/</dest_path>
+		<dest_target>dimm-thermal-sensor.i2c</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default></default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm4567 => dimmconn-3/dimm-0/spd/i2c-slave</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-dimm4567</source_target>
+		<dest_path>dimmconn-3/dimm-0/spd/</dest_path>
+		<dest_target>i2c-slave</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default>DIMM_SPD</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>SEEPROM</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-dimm4567 => dimmconn-3/dimm-0/dimm-thermal-sensor/dimm-thermal-sensor.i2c</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-dimm4567</source_target>
+		<dest_path>dimmconn-3/dimm-0/dimm-thermal-sensor/</dest_path>
+		<dest_target>dimm-thermal-sensor.i2c</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default></default>
+		</bus_attribute>
+	</bus>
+	<bus>
 		<bus_id>planar_vpd-0/vpd_assoc_parent => vpd_assoc_child</bus_id>
 		<bus_type>LOGICAL_ASSOCIATION</bus_type>
 		<cable>no</cable>
@@ -11763,35 +11832,6 @@
 		<bus_attribute>
 			<id>CLASS</id>
 		<default>BUS</default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/pec1/pec1_x8_x8_config/phb1_x8/phb1_x8_pci => bmc-0/chip-bmc-ast2500.pin_L17_pcie/chip-bmc-ast2500.pingroup_pcie/chip-bmc-ast2500.pcie</bus_id>
-		<bus_type>PCIE</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/pec1/pec1_x8_x8_config/phb1_x8/</source_path>
-		<source_target>phb1_x8_pci</source_target>
-		<dest_path>bmc-0/chip-bmc-ast2500.pin_L17_pcie/chip-bmc-ast2500.pingroup_pcie/</dest_path>
-		<dest_target>chip-bmc-ast2500.pcie</dest_target>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>LANE_REVERSAL</id>
-		<default>00</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>PCIE_SWAP_CLKS</id>
-		<default>0</default>
 		</bus_attribute>
 	</bus>
 	<bus>
@@ -11824,12 +11864,70 @@
 		</bus_attribute>
 	</bus>
 	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x16_config/phb3_x16/phb3_x16_pci => pcieslot-1/pciecard-0/pciep</bus_id>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/pec1/pec1_x8_x8_config/phb1_x8/phb1_x8_pci => pcieslot-1/pciecard-0/pciep</bus_id>
 		<bus_type>PCIE</bus_type>
 		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x16_config/phb3_x16/</source_path>
-		<source_target>phb3_x16_pci</source_target>
+		<source_path>proc_socket-0/module-0/p9_proc_s/pec1/pec1_x8_x8_config/phb1_x8/</source_path>
+		<source_target>phb1_x8_pci</source_target>
 		<dest_path>pcieslot-1/pciecard-0/</dest_path>
+		<dest_target>pciep</dest_target>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>LANE_REVERSAL</id>
+		<default>00</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>PCIE_LANE_EQUALIZATION</id>
+		<default>all,0x33,0x33</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>PCIE_SWAP_CLKS</id>
+		<default>0</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/pec1/pec1_x8_x8_config/phb2_x8/phb2_x8_pci => bmc-0/chip-bmc-ast2500.pin_L17_pcie/chip-bmc-ast2500.pingroup_pcie/chip-bmc-ast2500.pcie</bus_id>
+		<bus_type>PCIE</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/pec1/pec1_x8_x8_config/phb2_x8/</source_path>
+		<source_target>phb2_x8_pci</source_target>
+		<dest_path>bmc-0/chip-bmc-ast2500.pin_L17_pcie/chip-bmc-ast2500.pingroup_pcie/</dest_path>
+		<dest_target>chip-bmc-ast2500.pcie</dest_target>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>LANE_REVERSAL</id>
+		<default>00</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>PCIE_LANE_EQUALIZATION</id>
+		<default>all,0x33,0x33</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>PCIE_SWAP_CLKS</id>
+		<default>0</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb3_x8/phb3_x8_pci => pcieslot-2/pciecard-0/pciep</bus_id>
+		<bus_type>PCIE</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb3_x8/</source_path>
+		<source_target>phb3_x8_pci</source_target>
+		<dest_path>pcieslot-2/pciecard-0/</dest_path>
 		<dest_target>pciep</dest_target>
 		<bus_attribute>
 			<id>CLASS</id>
@@ -11859,35 +11957,6 @@
 		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x8_config/phb4_x8/</source_path>
 		<source_target>phb4_x8_pci</source_target>
 		<dest_path>USB-1/</dest_path>
-		<dest_target>pciep</dest_target>
-		<bus_attribute>
-			<id>CLASS</id>
-		<default>BUS</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>FRU_PATH</id>
-		<default></default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>LANE_REVERSAL</id>
-		<default>00</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>PCIE_LANE_EQUALIZATION</id>
-		<default>all,0x33,0x33</default>
-		</bus_attribute>
-		<bus_attribute>
-			<id>PCIE_SWAP_CLKS</id>
-		<default>0</default>
-		</bus_attribute>
-	</bus>
-	<bus>
-		<bus_id>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x4_x4_config/phb5_x4/phb5_x4_pci => pcieslot-2/pciecard-0/pciep</bus_id>
-		<bus_type>PCIE</bus_type>
-		<cable>no</cable>
-		<source_path>proc_socket-0/module-0/p9_proc_s/pec2/pec2_x8_x4_x4_config/phb5_x4/</source_path>
-		<source_target>phb5_x4_pci</source_target>
-		<dest_path>pcieslot-2/pciecard-0/</dest_path>
 		<dest_target>pciep</dest_target>
 		<bus_attribute>
 			<id>CLASS</id>
