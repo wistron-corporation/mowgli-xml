@@ -9990,7 +9990,7 @@
 	<id>/sys-0/ps_redundancy_state_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x09</value>
+	<value>0x0B</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -10007,30 +10007,6 @@
 	<value>0xE7</value>
 	</property>
 </globalSetting>
-
-<globalSetting>
-	<id>/sys-0/power_cap_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x04</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/dimm_freq_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x05</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/apss_fault_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x07</value>
-	</property>
-</globalSetting>
-
-
 </globalSettings>
 <attributeGroups>
 <attributeGroup>
@@ -12301,7 +12277,7 @@
 	</attribute>
 	<attribute>
 		<id>CLOCK_PLL_MUX</id>
-		<default>0x80030000</default>
+		<default>0x8c030000</default>
 	</attribute>
 	<attribute>
 		<id>CLOCK_PLL_MUX0</id>
