@@ -9920,6 +9920,21 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/motherboard-0/tpmconnector-0/daughtercard-0/tpm-0/tpm.i2c-0</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+	<property>
+	<id>I2C_ADDRESS</id>
+	<value></value>
+	</property>
+	<property>
+	<id>VPD_SIZE</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/motherboard-0/tpmconnector-0/daughtercard-0/tpm-0</id>
 	<property>
 	<id>FRU_ID</id>
@@ -12277,7 +12292,7 @@
 	</attribute>
 	<attribute>
 		<id>CLOCK_PLL_MUX</id>
-		<default>0x8c030000</default>
+		<default>0x80030000</default>
 	</attribute>
 	<attribute>
 		<id>CLOCK_PLL_MUX0</id>
