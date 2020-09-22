@@ -5425,6 +5425,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/apss-0/apss.GPIO13</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/apss-0/apss.GPIO14</id>
 	<property>
 	<id>DIRECTION</id>
@@ -9990,7 +9997,7 @@
 	<id>/sys-0/ps_redundancy_state_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0x0B</value>
+	<value>0x09</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -10005,6 +10012,27 @@
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0xE7</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/power_cap_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x04</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/dimm_freq_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x05</value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/apss_fault_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x07</value>
 	</property>
 </globalSetting>
 </globalSettings>
@@ -62892,7 +62920,7 @@
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
-		<default>NA</default>
+		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
@@ -62987,7 +63015,7 @@
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
-		<default>NA</default>
+		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
