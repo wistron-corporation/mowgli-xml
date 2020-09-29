@@ -8613,7 +8613,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/occ</id>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/occ0</id>
 	<property>
 	<id>FRU_ID</id>
 	<value>1</value>
@@ -8628,7 +8628,7 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/occ/occ_active_sensor</id>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/occ0/occ_active_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0x03</value>
