@@ -5721,7 +5721,7 @@
 	</property>
 	<property>
 	<id>VPD_SIZE</id>
-	<value></value>
+	<value>null</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -25317,15 +25317,15 @@
 	</attribute>
 	<attribute>
 		<id>ROLE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>RU_TYPE</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default></default>
+		<default>null</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -62841,7 +62841,7 @@
 	</attribute>
 	<attribute>
 		<id>FABRIC_GROUP_ID</id>
-		<default>0</default>
+		<default>1</default>
 	</attribute>
 	<attribute>
 		<id>LOCATION_CODE</id>
