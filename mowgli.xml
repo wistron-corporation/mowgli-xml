@@ -5733,21 +5733,6 @@
 	</property>
 </globalSetting>
 <globalSetting>
-	<id>/sys-0/node-0/motherboard-0/PCA9551-0/PCA9551.i2c-0</id>
-	<property>
-	<id>DIRECTION</id>
-	<value></value>
-	</property>
-	<property>
-	<id>I2C_ADDRESS</id>
-	<value>0xC0</value>
-	</property>
-	<property>
-	<id>VPD_SIZE</id>
-	<value></value>
-	</property>
-</globalSetting>
-<globalSetting>
 	<id>/sys-0/node-0/motherboard-0/Storage-0</id>
 	<property>
 	<id>FRU_ID</id>
@@ -12276,7 +12261,7 @@
 		</bus_attribute>
 		<bus_attribute>
 			<id>I2C_PURPOSE</id>
-		<default>PHYSICAL_PRESENCE</default>
+		<default>PHYS_PRESENT_N</default>
 		</bus_attribute>
 		<bus_attribute>
 			<id>I2C_SPEED</id>
@@ -12294,6 +12279,39 @@
 		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
 		<source_target>i2c-master-op0b</source_target>
 		<dest_path>U1_PCA9551-0/</dest_path>
+		<dest_target>PCA9551.i2c-0</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>955X</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-op0b => U3_PCA9551-1/PCA9551.i2c-0</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-op0b</source_target>
+		<dest_path>U3_PCA9551-1/</dest_path>
 		<dest_target>PCA9551.i2c-0</dest_target>
 		<bus_attribute>
 			<id>BUS_WIDTH</id>
