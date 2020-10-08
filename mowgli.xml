@@ -8508,7 +8508,21 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/i2c-master-op0b</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/i2c-master-proc-promc0</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/motherboard-0/proc_socket-0/module-0/p9_proc_s/i2c-master-tpm</id>
 	<property>
 	<id>DIRECTION</id>
 	<value></value>
@@ -8825,6 +8839,10 @@
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
+	<value></value>
+	</property>
+	<property>
+	<id>PBAX_GROUPID</id>
 	<value></value>
 	</property>
 </globalSetting>
@@ -11887,6 +11905,138 @@
 		<bus_attribute>
 			<id>I2C_TYPE</id>
 		<default></default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-op0b => PCA9551-0/PCA9551.i2c-0</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-op0b</source_target>
+		<dest_path>PCA9551-0/</dest_path>
+		<dest_target>PCA9551.i2c-0</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>955X</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-tpm => PCA9551-0/PCA9551.i2c-0</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-tpm</source_target>
+		<dest_path>PCA9551-0/</dest_path>
+		<dest_target>PCA9551.i2c-0</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default>WINDOW_OPEN</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>955X</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-tpm => tpmconnector-0/daughtercard-0/tpm-0/tpm.i2c-0</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-tpm</source_target>
+		<dest_path>tpmconnector-0/daughtercard-0/tpm-0/</dest_path>
+		<dest_target>tpm.i2c-0</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default>TPM</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>NUVOTON_TPM</default>
+		</bus_attribute>
+	</bus>
+	<bus>
+		<bus_id>proc_socket-0/module-0/p9_proc_s/i2c-master-tpm => PCA9551-0/PCA9551.i2c-0</bus_id>
+		<bus_type>I2C</bus_type>
+		<cable>no</cable>
+		<source_path>proc_socket-0/module-0/p9_proc_s/</source_path>
+		<source_target>i2c-master-tpm</source_target>
+		<dest_path>PCA9551-0/</dest_path>
+		<dest_target>PCA9551.i2c-0</dest_target>
+		<bus_attribute>
+			<id>BUS_WIDTH</id>
+		<default>2</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>CLASS</id>
+		<default>BUS</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>FRU_PATH</id>
+		<default></default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_PURPOSE</id>
+		<default>PHYSICAL_PRESENCE</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_SPEED</id>
+		<default>400</default>
+		</bus_attribute>
+		<bus_attribute>
+			<id>I2C_TYPE</id>
+		<default>955X</default>
 		</bus_attribute>
 	</bus>
 	<bus>
@@ -23350,7 +23500,7 @@
 	</attribute>
 	<attribute>
 		<id>I2C_ADDRESS</id>
-		<default></default>
+		<default>0xA0</default>
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
@@ -25346,7 +25496,7 @@
 	</attribute>
 	<attribute>
 		<id>SW_VER</id>
-		<default></default>
+		<default>BMC_SW_VER</default>
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
@@ -62163,7 +62313,7 @@
 	</attribute>
 	<attribute>
 		<id>I2C_ADDRESS</id>
-		<default></default>
+		<default>0xAE</default>
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
@@ -62763,7 +62913,7 @@
 	</attribute>
 	<attribute>
 		<id>I2C_ADDRESS</id>
-		<default></default>
+		<default>0xC0</default>
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
