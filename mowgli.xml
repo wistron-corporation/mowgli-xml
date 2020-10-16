@@ -5425,6 +5425,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/apss-0/apss.GPIO13</id>
+	<property>
+	<id>DIRECTION</id>
+	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/apss-0/apss.GPIO14</id>
 	<property>
 	<id>DIRECTION</id>
@@ -10007,7 +10014,6 @@
 	<value>0xE7</value>
 	</property>
 </globalSetting>
-
 <globalSetting>
 	<id>/sys-0/power_cap_sensor</id>
 	<property>
@@ -10029,8 +10035,6 @@
 	<value>0x07</value>
 	</property>
 </globalSetting>
-
-
 </globalSettings>
 <attributeGroups>
 <attributeGroup>
@@ -62916,7 +62920,7 @@
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
-		<default>NA</default>
+		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
@@ -63011,7 +63015,7 @@
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
-		<default>NA</default>
+		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
