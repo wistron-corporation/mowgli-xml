@@ -5950,7 +5950,7 @@
 	</property>
 	<property>
 	<id>I2C_ADDRESS</id>
-	<value>0x32</value>
+	<value>0x30</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -6580,7 +6580,7 @@
 	</property>
 	<property>
 	<id>I2C_ADDRESS</id>
-	<value>0x34</value>
+	<value>0x38</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -6669,7 +6669,7 @@
 	</property>
 	<property>
 	<id>I2C_ADDRESS</id>
-	<value>0x36</value>
+	<value>0x38</value>
 	</property>
 	<property>
 	<id>IPMI_INSTANCE</id>
@@ -62860,7 +62860,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>10</default>
+		<default>16</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
@@ -62955,7 +62955,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>12</default>
+		<default>18</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
