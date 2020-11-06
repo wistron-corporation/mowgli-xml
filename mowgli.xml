@@ -5646,6 +5646,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/dimm_freq_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x05</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/fw_boot_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -5668,6 +5675,13 @@
 	<property>
 	<id>IPMI_INSTANCE</id>
 	<value></value>
+	</property>
+</globalSetting>
+<globalSetting>
+	<id>/sys-0/node-0/apss_fault_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x07</value>
 	</property>
 </globalSetting>
 <globalSetting>
@@ -9987,6 +10001,13 @@
 	</property>
 </globalSetting>
 <globalSetting>
+	<id>/sys-0/power_cap_sensor</id>
+	<property>
+	<id>IPMI_SENSOR_ID</id>
+	<value>0x04</value>
+	</property>
+</globalSetting>
+<globalSetting>
 	<id>/sys-0/ps_derating_sensor</id>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
@@ -10012,27 +10033,6 @@
 	<property>
 	<id>IPMI_SENSOR_ID</id>
 	<value>0xE7</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/power_cap_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x04</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/dimm_freq_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x05</value>
-	</property>
-</globalSetting>
-<globalSetting>
-	<id>/sys-0/node-0/apss_fault_sensor</id>
-	<property>
-	<id>IPMI_SENSOR_ID</id>
-	<value>0x07</value>
 	</property>
 </globalSetting>
 </globalSettings>
@@ -62392,8 +62392,8 @@
 	<child_id>apss.ADCCH3</child_id>
 	<child_id>apss.ADCCH4</child_id>
 	<child_id>apss.ADCCH5</child_id>
-	<child_id>apss.ADCCH10</child_id>
 	<child_id>apss.ADCCH11</child_id>
+	<child_id>apss.ADCCH10</child_id>
 	<child_id>apss.ADCCH12</child_id>
 	<child_id>apss.ADCCH13</child_id>
 	<child_id>apss.ADCCH14</child_id>
@@ -62480,7 +62480,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>20</default>
+		<default>28</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
@@ -62528,7 +62528,7 @@
 	</attribute>
 	<attribute>
 		<id>IPMI_SENSOR_NAME_SUFFIX</id>
-		<default>ADC_12V_SENSE</default>
+		<default>ADC_12V_STANDBY_CURRENT</default>
 	</attribute>
 	<attribute>
 		<id>IPMI_SENSOR_READING_TYPE</id>
@@ -62852,7 +62852,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>10482</default>
+		<default>10741</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -62864,7 +62864,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-47</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -62947,7 +62947,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>6738</default>
+		<default>6667</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -62959,7 +62959,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0</default>
+		<default>-75</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63038,11 +63038,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>10</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63050,11 +63050,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>11</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63062,7 +63062,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>10</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63078,15 +63078,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>11</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_VCS_VIO_VPCIE_PROC_2</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63114,7 +63114,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63137,7 +63137,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>6500</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63145,11 +63145,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>12</default>
+		<default>20</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63157,7 +63157,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>11</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63173,15 +63173,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>12</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_VCS_VIO_VPCIE_PROC_3</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63193,7 +63193,7 @@
 	</attribute>
 	<attribute>
 		<id>IPMI_SENSOR_NAME_SUFFIX</id>
-		<default>ADC_VCS_VIO_VPCIE_PROC_3</default>
+		<default>ADC_12V_SENSE</default>
 	</attribute>
 	<attribute>
 		<id>IPMI_SENSOR_READING_TYPE</id>
@@ -63205,11 +63205,11 @@
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
-		<default>NA</default>
+		<default>APSS_SENSOR</default>
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63228,11 +63228,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>12</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63240,11 +63240,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>20</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63252,7 +63252,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>12</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63268,15 +63268,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>20</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_12V_SENSE</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63304,7 +63304,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63323,11 +63323,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>13</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63335,11 +63335,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>22</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63347,7 +63347,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>13</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63363,15 +63363,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>22</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_TOTAL_SYS_CURRENT</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63399,7 +63399,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63418,11 +63418,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>14</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63430,11 +63430,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>23</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63442,7 +63442,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>14</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63458,15 +63458,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>23</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_MEM_CACHE</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63494,7 +63494,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63513,11 +63513,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>15</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>20.04</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63525,11 +63525,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>13</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63537,7 +63537,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>15</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63553,15 +63553,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>13</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_IO_A</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>20.04</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63589,7 +63589,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63608,11 +63608,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>6</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63620,11 +63620,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>7</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63632,7 +63632,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>6</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63648,15 +63648,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>7</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_VDD_PROC_2</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63684,7 +63684,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63703,11 +63703,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>7</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>9.117</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63715,11 +63715,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>8</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63727,7 +63727,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>7</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63743,15 +63743,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>8</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_VDD_PROC_3</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>9.117</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63779,7 +63779,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63798,11 +63798,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>8</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>1</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63810,7 +63810,7 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>9</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
@@ -63822,7 +63822,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>8</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63838,15 +63838,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>9</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_VCS_VIO_VPCIE_PROC_0</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>1</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63874,7 +63874,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
@@ -63893,11 +63893,11 @@
 	<position>-1</position>
 	<attribute>
 		<id>ADC_CHANNEL_ASSIGNMENT</id>
-		<default>9</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GAIN</id>
-		<default>6.494</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_GROUND</id>
@@ -63905,11 +63905,11 @@
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_ID</id>
-		<default>10</default>
+		<default>0</default>
 	</attribute>
 	<attribute>
 		<id>ADC_CHANNEL_OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -63917,7 +63917,7 @@
 	</attribute>
 	<attribute>
 		<id>CHANNEL</id>
-		<default>9</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>CHIP_UNIT</id>
@@ -63933,15 +63933,15 @@
 	</attribute>
 	<attribute>
 		<id>FUNCTION_ID</id>
-		<default>10</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>FUNCTION_NAME</id>
-		<default>ADC_VCS_VIO_VPCIE_PROC_1</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>GAIN</id>
-		<default>6.494</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>IPMI_ENTITY_ID</id>
@@ -63969,7 +63969,7 @@
 	</attribute>
 	<attribute>
 		<id>OFFSET</id>
-		<default>0.005</default>
+		<default></default>
 	</attribute>
 	<attribute>
 		<id>PIN-NAME</id>
