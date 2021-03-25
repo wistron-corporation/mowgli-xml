@@ -10050,7 +10050,7 @@
 	</property>
 	<property>
 	<id>IPMI_SENSOR_ID</id>
-	<value>0xE8</value>
+	<value>0x70</value>
 	</property>
 </globalSetting>
 </globalSettings>
